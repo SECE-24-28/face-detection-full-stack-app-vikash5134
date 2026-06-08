@@ -1,0 +1,98 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: system-ui, sans-serif;
+  background: #f5f5f5;
+  color: #222;
+  min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  background: #fff;
+  border-bottom: 1px solid #e0e0e0;
+}
+.nav-email { font-size: 14px; color: #555; }
+
+/* Center layout */
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Card */
+.card {
+  background: #fff;
+  padding: 32px;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  width: 340px;
+}
+.card h2 { margin-bottom: 20px; font-size: 20px; }
+
+/* Form */
+form { display: flex; flex-direction: column; gap: 12px; }
+input {
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+}
+input:focus { border-color: #555; }
+
+/* Buttons */
+button {
+  padding: 10px 16px;
+  background: #222;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+button:hover { background: #444; }
+button:disabled { background: #aaa; cursor: not-allowed; }
+.btn-outline {
+  background: transparent;
+  color: #222;
+  border: 1px solid #ccc;
+}
+.btn-outline:hover { background: #f0f0f0; }
+
+/* Link text */
+.link { color: #222; text-decoration: underline; cursor: pointer; }
+.card p { margin-top: 16px; font-size: 13px; color: #666; }
+
+/* Error */
+.error { color: #c0392b; font-size: 13px; }
+
+/* Main content */
+.main { max-width: 700px; margin: 40px auto; padding: 0 16px; }
+
+/* Detect */
+.detect-container h2 { margin-bottom: 20px; }
+.input-row { display: flex; gap: 10px; }
+.input-row input { flex: 1; }
+
+/* Image wrapper with bounding boxes */
+.img-wrapper {
+  position: relative;
+  display: inline-block;
+  margin-top: 20px;
+  max-width: 100%;
+}
+.img-wrapper img { display: block; max-width: 100%; border-radius: 6px; }
+.face-box {
+  position: absolute;
+  border: 2px solid #e74c3c;
+  border-radius: 2px;
+  pointer-events: none;
+}
+.info { margin-top: 12px; font-size: 14px; color: #555; }
